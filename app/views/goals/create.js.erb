@@ -1,0 +1,8 @@
+// alert("Post Created");
+// $('#newGoal').hide();
+$('#newGoal').modal('hide');
+$('#my-goals').append('<div><%= escape_javascript(render @goal) %></div>')
+// $().appendTo(".my-goals");
+$(function() {
+   $( ".goal-body" ).draggable();
+});
