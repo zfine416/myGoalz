@@ -18,5 +18,10 @@
 
 
 $(function() {
-   $( ".goal-body" ).draggable();
+   $( ".goal-body" ).draggable({ snap: '#completed-goals' });
 });
+
+$( document ).ready(function(){
+	var height = $('#my-goals').height();
+	$('#completed-goals').css('height',height+"px");
+})

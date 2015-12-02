@@ -21,7 +21,7 @@ h2{
 }
 
 body{
-	background: $turq;
+	background: $greyish;
 }
 
 /* Signup and Login Form customization */
@@ -88,8 +88,12 @@ form{
 .btn-primary{
 	background-color: $purp;
 	transition: background-color 1s;
+	position: absolute;
+	top:75px;
+	/*166/2 = 83*/
+	left: calc(50% - 83px);
 	&:hover{
-		background-color:$red;
+		background-color:$purp;
 	}
 	&:focus{
 		background-color:$purp;
@@ -106,6 +110,22 @@ form{
 	text-align: center;
 	font-family: 'Lora', serif;
 	color: white;
+	z-index: 1;
+}
+
+/*column for my-goals/ in progress goals*/
+#my-goals{
+	border: 3px solid $turq;
+	h3{
+		text-align: center;
+	}
+}
+
+#completed-goals{
+	border: 3px solid $turq;
+	h3{
+		text-align: center;
+	}
 }
 
 

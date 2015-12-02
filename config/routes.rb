@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   end
 end
 
+#                   Prefix Verb   URI Pattern                    Controller#Action
 #                     root GET    /                              welcome#index
 #         new_user_session GET    /users/sign_in(.:format)       users/sessions#new
 #             user_session POST   /users/sign_in(.:format)       users/sessions#create
